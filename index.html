@@ -3,34 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Listing</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 2rem;
-        background: #111;
-        color: #f5f5f5;
-      }
-
-      main {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      h1 {
-        margin-bottom: 0.5rem;
-      }
-
-      p {
-        line-height: 1.6;
-      }
-    </style>
+    <title>Google Movies — Home</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="topbar">
+      <div class="brand">Google Movies</div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="theaters.html">In Theaters</a>
+        <a href="streaming.html">Streaming</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="actors.html">Actors</a>
+        <a href="movie.html">Movie</a>
+      </nav>
+    </header>
+
     <main>
-      <h1>Movie Listing</h1>
-      <p>This is a starter page for your movie listing project.</p>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Featured Premiere</p>
+          <h1>Discover the next movie worth watching tonight.</h1>
+          <p>
+            Explore new releases, streamers, reviews, and trending actors in a
+            Material-inspired experience.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="movie.html">View Details</a>
+            <a class="button secondary" href="theaters.html">Browse Theaters</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Starlight Horizon</h2>
+          <p>★ 8.9 · Sci-Fi · 2h 09m</p>
+          <p>A mysterious signal awakens a hidden city above the clouds.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Latest Movies In Theaters</h2>
+          <a href="theaters.html">View all</a>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Neon Skyline</h3>
+            <p>Release: Jun 28</p>
+            <p>★ 8.2 · Drama</p>
+          </article>
+          <article class="card">
+            <h3>Midnight Circuit</h3>
+            <p>Release: Jul 3</p>
+            <p>★ 7.8 · Action</p>
+          </article>
+          <article class="card">
+            <h3>Golden Orchard</h3>
+            <p>Release: Jul 12</p>
+            <p>★ 8.5 · Romance</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Currently Streaming</h2>
+          <a href="streaming.html">View all</a>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Shadow Atlas</h3>
+            <p>Netflix · ★ 8.1</p>
+          </article>
+          <article class="card">
+            <h3>Northbound</h3>
+            <p>Prime Video · ★ 7.6</p>
+          </article>
+          <article class="card">
+            <h3>Echoes of Summer</h3>
+            <p>Disney+ · ★ 8.4</p>
+          </article>
+        </div>
+      </section>
     </main>
   </body>
 </html>
