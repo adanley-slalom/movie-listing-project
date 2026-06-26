@@ -234,7 +234,7 @@ h3 {
   border: 1px solid var(--md-sys-color-outline);
   border-radius: var(--radius-medium);
   overflow: hidden;
-  box-shadow: var(--elevation-1);
+  border-radius: 8px;
   flex: 0 0 auto;
 }
 
